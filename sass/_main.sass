@@ -123,10 +123,74 @@ header
     color: #282828
     text-align: center
     line-height: 1.2em
+  .hairagami-img
+    display: table
+    margin: 20px auto 0
+  .form-block
+    background: url(../img/form-block_bg.png) center no-repeat
+    height: 418px
+    margin-top: 20px
+    +box
+  &__text
+    float: left
+    margin-left: -50px
+    width: 1000px
+    .top__img
+      float: left
+    .top__about
+      width: 400px
+      display: inline-block
+      margin-top: 95px
+      margin-left: -100px
+      position: relative
 
-
-
-
+      h3
+        font-size: 30px
+        +nsb
+        color: #ffffff
+        margin-bottom: 45px
+      p
+        font-size: 20px
+        color: #ffffff
+        +nl
+      .price
+        text-align: center
+        color: #ffffff
+        position: absolute
+        content: ''
+        background: url(../img/price_bg.png) no-repeat center
+        width: 145px
+        height: 145px
+        top: 0
+        right: 0
+        font-size: 19.5px
+        padding-right: 45px
+        padding-top: 10px
+        +box
+        line-height: 1.2em
+        +nl
+        .price__number
+          font-size: 35.6px
+          +nsb
+          line-height: .7em
+        .ruble
+          position: relative
+          &:before
+            position: absolute
+            content: ""
+            border-bottom: solid 1px
+            height: 0
+            left: -3px
+            right: 2px
+            top: 18px
+          &:after
+            position: absolute
+            content: ""
+            border-bottom: solid 1px
+            height: 0
+            left: -3px
+            right: 2px
+            top: 20px
 
 
 .bottom
