@@ -91,21 +91,28 @@
 
       span
         position: relative
-        +text-shadow(1px 1px 1px rgba(0, 0, 0, 0.13))
+        +text-shadow(0 1px 0 #fff)
         display: block
         font-size: 29px
-        //padding: 8px 6px 8px 6px
+        padding-top: 6px
+        +box
         width: 54px
         height: 54px
         +nsb
-        color: #282828
+        color: #595959
         +border-radius(50%)
         +background-clip(padding-box)
         background-color: #ebebeb
         +background-image(linear-gradient(to bottom, #b9b9b9 0%, #b9b9b9 0.78%, #fff 100%))
         +box-shadow(0 2px 1px 0 rgb(158,36,39))
-
-
+        &:after
+          position: absolute
+          content: ''
+          height: 0
+          border-bottom: 1px solid rgb(200,200,200)
+          top: 27px
+          left: 0
+          right: 0
 
 .form
   background: url(../img/form_bg.png) no-repeat
