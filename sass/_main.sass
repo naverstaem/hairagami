@@ -72,8 +72,9 @@ input, textarea
     +border-radius(2px)
     +background-clip(padding-box)
     top: -30px
-    left: 37%
-    right: 37%
+    left: 50%
+    +transform(translate(-50%))
+    width: 117px
 
 header
   height: 104px
@@ -338,7 +339,39 @@ header
       color: #242424
       padding: 12px
 
+.reviews
+  margin-top: 50px
+  background: url(../img/reviews_bg.png) center no-repeat
+  height: 595px
+  padding-top: 80px
+  +box
+  +background-size(cover)
+  .reviews_in
+    @extend %in
+  .title--white
+    color: #ffffff
+    &:before
+      border-bottom: solid 6px #ffffff
+  .review__item
+    text-align: left
+    width: 260px
+    display: inline-block
+    color: #ffffff
+    margin-top: 50px
+    vertical-align: top
+    margin-right: 70px
+    &:last-child
+      margin-right: 0
+    img
+      margin-bottom: 20px
+    p
+      font-size: 17px
+      +nt
 
+    h3
+      font-size: 17px
+      +nl
+      margin-top: 10px
 
 
 
