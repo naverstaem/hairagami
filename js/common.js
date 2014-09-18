@@ -3,6 +3,24 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
+    $('.fancybox').fancybox({
+        padding: 0,
+        helpers: {
+            overlay: {
+                locked: false,
+                css:{'background' : 'rgba(255, 255, 255, 0.7)'}
+            }
+        },
+        tpl: {
+            closeBtn: '<div class="myFancyClose"></div>'
+        },
+        beforeShow: function(){
+            $(".fancybox-skin").css("backgroundColor","transparent");
+            $(".fancybox-skin").css("boxShadow","none");
+        }
+    });
+
+
     (function ($) {
         // Counter
 
