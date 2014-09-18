@@ -116,6 +116,11 @@ header
   +background-size(cover)
   padding-top: 60px
   +box
+  +clr
+  .top_in
+    @extend %in
+    +clr
+
 
   h2
     font-size: 26.6px
@@ -133,8 +138,8 @@ header
     +box
   &__text
     float: left
-    margin-left: -50px
-    width: 1000px
+    margin-left: -300px
+    width: 860px
     .top__img
       float: left
     .top__about
@@ -161,8 +166,8 @@ header
         background: url(../img/price_bg.png) no-repeat center
         width: 145px
         height: 145px
-        top: 0
-        right: 0
+        top: -27px
+        right: -25px
         font-size: 19.5px
         padding-right: 45px
         padding-top: 10px
@@ -172,9 +177,11 @@ header
         .price__number
           font-size: 35.6px
           +nsb
+          font-weight: normal
           line-height: .7em
         .ruble
           position: relative
+          font-size: 19.6px
           &:before
             position: absolute
             content: ""
@@ -192,6 +199,8 @@ header
             right: 2px
             top: 20px
 
+  .form
+    float: right
 
 .bottom
 
